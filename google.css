@@ -1,0 +1,142 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* .header:hover {
+    cursor: pointer;
+
+text-decoration: underline;
+
+}
+*/
+
+.header {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: grey;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.header a {
+    padding: 1%;
+}
+
+.bento-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    height: 22px;
+    width: 22px;
+}
+
+.bento-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: gray;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 290px;
+    width: 400px;
+}
+
+.search {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 20px;
+    border: none;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1%;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+    padding: 2% 2% 2% 1%;
+}
+
+.search img {
+    width: 30px;
+    height: 25px;
+}
+
+.container--images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.image--tile a {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    margin: 0%;
+}
+
+.image--tile .more {
+    padding: 5%;
+    background-color: whitesmoke;
+    width: 17px;
+    height: 16px;
+    margin: 0%;
+    position: relative;
+    left: 33%;
+    top: 1%;
+    display: none;
+}
+
+.image--tile {
+    padding: 5px;
+    background-color: white;
+    height: 45%;
+    width: 15%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5%;
+    font-size: 20px;
+}
+
+.image--tile:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.image--tile:hover .more {
+    display: block;
+}
+
+.image--tile img {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 10px 0;
+    background-color: rgb(243, 233, 233);
+}
