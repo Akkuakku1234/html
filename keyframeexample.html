@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+        
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+        
+        @keyframes mymove {
+            0% {
+                top: 0px;
+            }
+            25% {
+                top: 200px;
+            }
+            75% {
+                top: 50px
+            }
+            100% {
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+    </div>
+</body>
+
+</html>
